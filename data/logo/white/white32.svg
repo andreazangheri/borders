@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.21 99.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>logo</title>
+  <g id="sfondo">
+    <rect class="cls-1" width="99.21" height="99.21"/>
+  </g>
+  <g id="sign">
+    <g>
+      <polygon points="32.68 67.13 32.68 27.54 28.39 27.54 28.39 71.14 39.59 71.14 39.59 67.13 32.68 67.13"/>
+      <path d="M59.57,27.54h-.65L55.5,34H43.71l-3.35-6.4H35.45L38.9,34h-3v3.91H41L47.34,49.6V63.25h4.52V49.4l6.3-11.54h5.1V34h-3l1.31-2.4h4.91V71.14h4.3V27.54Zm-10,17.57-3.85-7.25h7.69Z"/>
+    </g>
+  </g>
+</svg>

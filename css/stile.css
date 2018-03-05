@@ -1,0 +1,865 @@
+/* CSS */
+
+/*========= LAYOUT =======*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------------------*/
+div#header {/*========= Header Logo and Naming =======*/
+/*float: none;*/
+position: absolute;
+left: 0;
+padding:0px 12px 0px 0px;
+z-index: 1;
+}
+div#logo {
+    width: 100%;
+}
+div#logo img{
+    background: #000;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+div.logotype {
+    padding: 10px 2px 10px 40px;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 700;
+}
+/*========= Main Menu =======*/
+/*---- Imago — Sonus — Ludus — Area -----*/
+div#menu-top-left{
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+	padding:0px 12px 0px 0px;
+	z-index: 1;
+}
+nav#menu{
+    padding: 0px 12px 0px 0px;
+	width: 96px;
+	font-size: 12px;
+	line-height: 1.5;
+	text-transform: lowercase;
+}
+ul li a.menu-pad-left {
+    padding: 7px 12px 7px 40px;
+	right:0;
+    width: 40px;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+    display:block;
+	text-align: left;
+    text-decoration: none;
+	-webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+	transition-timing-function: ease-in;
+    transition: width 0.5s;
+}
+ul#menu-pad-left-list li {
+    margin: 0px 0px 12px 0px;
+    display:table;
+} 
+li a.menu-pad-left:hover{
+	-webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+	transition-timing-function: ease-out;
+    transition: width 0.75s;
+    width: 65px;
+	outline:0;
+}
+li:active  {
+	opacity: 0.92;
+	-webkit-transition: opacity 0.01s ease-in-out;
+  -moz-transition: opacity 0.01s ease-in-out;
+  -ms-transition: opacity 0.01s ease-in-out;
+  -o-transition: opacity 0.01s ease-in-out;
+  transition: opacity 0.01s ease-in-out;
+}
+/*---- Secondary Menu -----*/
+/*---- Stop — Clear — Save -----*/
+div#menu-bottom-right{
+	position: absolute;
+	right: 0;
+	padding:0px 0px 0px 12px;
+	z-index: 1;
+}
+nav#menu-bottom{
+	padding: 0px opx 0px 12px;
+	width: 96px; 
+	font-size: 12px;
+	line-height: 1.5;
+	text-transform: lowercase;
+}
+ul li a.menu-pad-right {
+	position: absolute;
+    padding: 9px 42px 9px 12px;
+	right: 0;
+    width: 42px;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 500;
+    display:block;
+    text-decoration: none;
+	font-size: 12px;
+	text-align: right;
+	-webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+	transition-timing-function: ease-in;
+    transition: width 0.5s;
+}
+ul#menu-pad-right-list li {
+    margin: 0px 0px 46px 0px;
+    display:table;
+} 
+li a.menu-pad-right:hover, li a.menu-pad-right:active {
+     -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+	transition-timing-function: ease-out;
+    transition: width 0.75s;
+	width: 65px;
+	outline: 0;
+}
+ol,ul{
+    list-style:none;
+    left:0;
+}
+/*============= Footer =============*/
+footer{ 
+	position: absolute;
+	z-index: 12;
+	bottom: 20px;
+    right: 0px;
+	width: auto;
+	padding: 2px 40px 2px 26px;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 500;
+	font-size: 10px;
+    letter-spacing: 0.15px;
+}
+footer p {
+    display: inline-block;
+    font-weight: 500;
+  }
+
+footer p a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+p#footer a:link,p#footer a:visited,p#footer a:active {
+    text-decoration: none;
+    color: white;
+    cursor:default;
+}
+footer span {
+    float: none;
+    right: 0;
+    margin-right: 344px;
+    z-index: 1;
+}
+/* ===== MEDIA QUERIES ===== */
+/* ===== SMARTPHONES  ===== */
+@media (max-width : 319px) {
+div#header {   
+	width: 62px;
+    position: absolute;
+    top: 27px;
+}
+div#logo {
+	display: none;
+}
+div#logo img{
+    background: #000;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+div.logotype {
+	padding: 9px 2px 9px 16px;
+    font-size: 12px;
+    letter-spacing: 0.25px;
+    width: 78px;
+}
+	ul#menu-pad-left-list li {
+    margin: 0px 0px 10px 0px;
+    display: table;
+}
+/*========= Main Menu =======*/
+/*---- Imago — Sonus — Ludus — Area -----*/
+nav#menu {
+    padding: 0px 12px 0px 0px;
+    width: 96px;
+    font-size: 10px;
+    line-height: 1.5;
+    text-transform: lowercase;
+}
+div#menu-top-left{
+	position: absolute;
+    left: 0;
+    bottom: 18px;
+    padding: 0px 12px 0px 0px;
+    z-index: 1;
+}
+	div#menu-bottom-right{
+		position: absolute;
+		right: 0;
+		bottom: 103px;
+		padding:0px 0px 0px 12px;
+		z-index: 1;
+}
+	ul#menu-pad-right-list li {
+    	margin: 0px 0px 85px 0px;
+    	display:table;
+} 
+	ul li a.menu-pad-left {
+        padding: 24px 14px 26px 20px;
+    letter-spacing: 0.2px;
+    width: 40px;
+    font-size: 13px;
+}
+	ul li a.menu-pad-right {
+   		    position: absolute;
+    padding: 28px 18px 29px 12px;
+    width: 40px;
+    font-size: 13px;
+}
+	footer {
+  	display: none;
+}
+	  p.hide {
+        display:none;
+    }
+}
+@media (min-width : 320px) , (max-height: 519px) {
+	div#header {   
+	width: 62px;
+    position: absolute;
+    top: 27px;
+}
+div#logo {
+	display: none;
+}
+div#logo img{
+    background: #000;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+div.logotype {
+	padding: 9px 0px 10px 18px;
+	font-size: 13px;
+	letter-spacing: 0.25px;
+	width: 78px;
+}
+	ul#menu-pad-left-list li {
+    margin: 0px 0px 10px 0px;
+    display: table;
+}
+/*========= Main Menu =======*/
+/*---- Imago — Sonus — Ludus — Area -----*/
+nav#menu {
+    padding: 0px 12px 0px 0px;
+    width: 96px;
+    font-size: 10px;
+    line-height: 1.5;
+    text-transform: lowercase;
+}
+div#menu-top-left{
+	position: absolute;
+    left: 0;
+    bottom: 18px;
+    padding: 0px 12px 0px 0px;
+    z-index: 1;
+}
+	div#menu-bottom-right{
+		position: absolute;
+		right: 0;
+		bottom: 103px;
+		padding:0px 0px 0px 12px;
+		z-index: 1;
+}
+	ul#menu-pad-right-list li {
+    	margin: 0px 0px 85px 0px;
+    	display:table;
+} 
+	ul li a.menu-pad-left {
+    padding: 24px 14px 26px 20px;
+    letter-spacing: 0.2px;
+    width: 40px;
+    font-size: 13px;
+}
+	ul li a.menu-pad-right {
+   	position: absolute;
+    padding: 28px 18px 29px 12px;
+    width: 40px;
+    font-size: 13px;
+}
+	footer {
+  	position: absolute;
+    z-index: 12;
+    bottom: 18px;
+    right: 0px;
+    width: auto;
+    padding: 9px 16px 9px 18px;
+    margin: 0px 0px 10px 0px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+	  p.hide {
+        display:none;
+    }
+}
+@media (min-height: 1px) and (max-height: 339px) {
+	div#logo {
+	display: none;
+}
+div.logotype {
+	display: none;
+}
+	ul#menu-pad-left-list li {
+    margin: 0px 0px 10px 0px;
+    display: table;
+}
+/*========= Main Menu =======*/
+/*---- Imago — Sonus — Ludus — Area -----*/
+nav#menu {
+    padding: 0px 12px 0px 0px;
+    width: 96px;
+    font-size: 10px;
+    line-height: 1.5;
+    text-transform: lowercase;
+}
+div#menu-top-left{
+	position: absolute;
+    left: 0;
+    bottom: 18px;
+    padding: 0px 12px 0px 0px;
+    z-index: 1;
+}
+	div#menu-bottom-right{
+		position: absolute;
+		right: 0;
+		bottom: 74px;
+		padding:0px 0px 0px 12px;
+		z-index: 1;
+}
+	ul#menu-pad-right-list li {
+    	margin: 0px 0px 56px 0px;
+    	display:table;
+} 
+	ul li a.menu-pad-left {
+   	padding: 10px 14px 11px 20px;
+    letter-spacing: 0.2px;
+    width: 40px;
+    font-size: 13px;
+}
+	ul li a.menu-pad-right {
+   		    position: absolute;
+    padding: 12px 18px 15px 12px;
+    width: 40px;
+    font-size: 13px;
+}
+	footer {
+    position: absolute;
+    z-index: 12;
+    bottom: 18px;
+    right: 0px;
+    width: auto;
+    padding: 9px 18px 10px 18px;
+    margin: 0px 0px 10px 0px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+	  p.hide {
+        display:none;
+    }
+}
+@media (min-height:340px) and (max-height: 370px) {
+	div#logo {
+	display: none;
+}
+div.logotype {
+	display: inherit;
+}
+	ul#menu-pad-left-list li {
+    margin: 0px 0px 10px 0px;
+    display: table;
+}
+/*========= Main Menu =======*/
+/*---- Imago — Sonus — Ludus — Area -----*/
+nav#menu {
+    padding: 0px 12px 0px 0px;
+    width: 96px;
+    font-size: 10px;
+    line-height: 1.5;
+    text-transform: lowercase;
+}
+div#menu-top-left{
+	position: absolute;
+    left: 0;
+    bottom: 18px;
+    padding: 0px 12px 0px 0px;
+    z-index: 1;
+}
+	div#menu-bottom-right{
+		position: absolute;
+		right: 0;
+		bottom: 77px;
+		padding:0px 0px 0px 12px;
+		z-index: 1;
+}
+	ul#menu-pad-right-list li {
+    	margin: 0px 0px 55px 0px;
+    	display:table;
+} 
+	ul li a.menu-pad-left {
+   	padding: 10px 14px 11px 20px;
+    letter-spacing: 0.2px;
+    width: 40px;
+    font-size: 13px;
+}
+	ul li a.menu-pad-right {
+   		    position: absolute;
+    padding: 12px 18px 14px 12px;
+    width: 40px;
+    font-size: 13px;
+}
+	footer {
+    position: absolute;
+    z-index: 12;
+    bottom: 18px;
+    right: 0px;
+    width: auto;
+    padding: 9px 18px 10px 18px;
+    margin: 0px 0px 10px 0px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+	  p.hide {
+        display:none;
+    }
+}
+@media (min-height: 371px) and (max-height: 480px) {
+div#logo {
+	display: none;
+}
+div.logotype {
+	display: inherit;
+	padding: 9px 0px 10px 18px;
+	font-size: 13px;
+	letter-spacing: 0.25px;
+	width: 78px;
+}
+	ul#menu-pad-left-list li {
+    margin: 0px 0px 10px 0px;
+    display: table;
+}
+/*========= Main Menu =======*/
+/*---- Imago — Sonus — Ludus — Area -----*/
+nav#menu {
+    padding: 0px 12px 0px 0px;
+    width: 96px;
+    font-size: 10px;
+    line-height: 1.5;
+    text-transform: lowercase;
+}
+div#menu-top-left{
+	position: absolute;
+    left: 0;
+    bottom: 18px;
+    padding: 0px 12px 0px 0px;
+    z-index: 1;
+}
+	div#menu-bottom-right{
+		position: absolute;
+		right: 0;
+		bottom: 84px;
+		padding:0px 0px 0px 12px;
+		z-index: 1;
+}
+	ul#menu-pad-right-list li {
+    	margin: 0px 0px 66px 0px;
+    	display:table;
+} 
+	ul li a.menu-pad-left {
+    padding: 15px 14px 16px 20px;
+    letter-spacing: 0.2px;
+    width: 40px;
+    font-size: 13px;
+}
+	ul li a.menu-pad-right {
+   	 position: absolute;
+    padding: 18px 18px 19px 14px;
+    width: 40px;
+    font-size: 13px;
+}
+	footer {
+    position: absolute;
+    z-index: 12;
+    bottom: 18px;
+    right: 0px;
+    width: auto;
+    padding: 9px 18px 10px 18px;
+    margin: 0px 0px 10px 0px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+	  p.hide {
+        display:none;
+    }
+}
+@media (min-height: 560px) {
+	div#header {   
+	 width: 70px;
+    position: absolute;
+    top: 27px;
+}
+div#logo {
+	display: inherit;
+    width: 100%;
+}
+div#logo img{
+    background: #000;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+div.logotype {
+	padding: 9px 0px 10px 18px;
+    font-size: 13px;
+    letter-spacing: 0.25px;
+    width: 80px;
+}
+	footer {
+    position: absolute;
+    z-index: 12;
+    bottom: 18px;
+    right: 0px;
+    width: auto;
+    padding: 9px 16px 10px 18px;
+    margin: 0px 0px 10px 0px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+}
+@media (min-height: 700px) and (min-width: 700px) {
+	div#header {   
+	width: 85px;
+    position: absolute;
+    top: 37px;
+}
+div#logo {
+	display: inherit;
+    width: 100%;
+}
+div#logo img{
+    background: #000;
+	display: block;
+	width: 100%;
+	margin-bottom: 12px;
+}
+div.logotype {
+	padding: 10px 0px 10px 21px;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    width: 95px;
+}
+	ul#menu-pad-left-list li {
+    margin: 0px 0px 12px 0px;
+    display: table;
+}
+/*========= Main Menu =======*/
+/*---- Imago — Sonus — Ludus — Area -----*/
+nav#menu {
+    padding: 0px 12px 0px 0px;
+    width: 96px;
+    line-height: 1.5;
+    text-transform: lowercase;
+}
+div#menu-top-left{
+	position: absolute;
+    left: 0;
+    bottom: 18px;
+    padding: 0px 12px 0px 0px;
+    z-index: 1;
+}
+	div#menu-bottom-right{
+		position: absolute;
+		right: 0;
+		bottom: 120px;
+		padding:0px 0px 0px 12px;
+		z-index: 1;
+}
+	ul#menu-pad-right-list li {
+   	margin: 0px 0px 100px 0px;
+    display: table;
+} 
+	ul li a.menu-pad-left {
+    padding: 30px 24px 30px 20px;
+    letter-spacing: 0.5px;
+    width: 40px;
+    font-size: 15px;
+}
+	ul li a.menu-pad-right {
+   	position: absolute;
+    padding: 34px 24px 34px 20px;
+    width: 40px;
+    font-size: 15px;
+}
+	li a.menu-pad-left:hover {
+    -webkit-transition: width 1s;
+    transition-timing-function: ease-out;
+    transition: width 0.75s;
+    width: 70px;
+    outline: 0;
+}
+	li a.menu-pad-right:hover, li a.menu-pad-right:active {
+    -webkit-transition: width 1s;
+    transition-timing-function: ease-out;
+    transition: width 0.75s;
+    width: 70px;
+    outline: 0;
+}
+	footer {
+  	position: absolute;
+    z-index: 12;
+    bottom: 20px;
+    right: 0px;
+    width: auto;
+    padding: 10px 22px 10px 18px;
+    margin: 0px 0px 10px 0px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+	  p.hide {
+        display:none;
+    }
+}
+@media (min-height: 700px) and (min-width: 1024px) {
+	div#header {   
+	width: 85px;
+    position: absolute;
+    top: 37px;
+}
+div#logo {
+	display: inherit;
+    width: 100%;
+}
+div#logo img{
+    background: #000;
+	display: block;
+	width: 100%;
+	margin-bottom: 12px;
+}
+div.logotype {
+	padding: 10px 0px 10px 21px;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    width: 95px;
+}
+	ul#menu-pad-left-list li {
+    margin: 0px 0px 12px 0px;
+    display: table;
+}
+/*========= Main Menu =======*/
+/*---- Imago — Sonus — Ludus — Area -----*/
+nav#menu {
+    padding: 0px 12px 0px 0px;
+    width: 96px;
+    line-height: 1.5;
+    text-transform: lowercase;
+}
+div#menu-top-left{
+	position: absolute;
+    left: 0;
+    bottom: 18px;
+    padding: 0px 12px 0px 0px;
+    z-index: 1;
+}
+	div#menu-bottom-right{
+		position: absolute;
+		right: 0;
+		bottom: 120px;
+		padding:0px 0px 0px 12px;
+		z-index: 1;
+}
+	ul#menu-pad-right-list li {
+   	margin: 0px 0px 100px 0px;
+    display: table;
+} 
+	ul li a.menu-pad-left {
+    padding: 30px 24px 30px 20px;
+    letter-spacing: 0.5px;
+    width: 40px;
+    font-size: 15px;
+}
+	ul li a.menu-pad-right {
+   	position: absolute;
+    padding: 34px 24px 34px 20px;
+    width: 40px;
+    font-size: 15px;
+}
+	li a.menu-pad-left:hover {
+    -webkit-transition: width 1s;
+    transition-timing-function: ease-out;
+    transition: width 0.75s;
+    width: 70px;
+    outline: 0;
+}
+	li a.menu-pad-right:hover, li a.menu-pad-right:active {
+    -webkit-transition: width 1s;
+    transition-timing-function: ease-out;
+    transition: width 0.75s;
+    width: 70px;
+    outline: 0;
+}
+	footer {
+  	position: absolute;
+    z-index: 12;
+    bottom: 20px;
+    right: 0px;
+    width: auto;
+    padding: 10px 22px 10px 18px;
+    margin: 0px 0px 10px 0px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+	  p.hide {
+        display:inline;
+    }
+}
+@media (min-height:1025px) and (min-width: 1400px) {
+div#header {   
+	width: 96px;
+    position: absolute;
+    top: 37px;
+}
+div#logo {
+	display: inherit;
+    width: 100%;
+}
+div#logo img{
+    background: #000;
+	display: block;
+	width: 100%;
+	margin-bottom: 14px;
+}
+div.logotype {
+	padding: 10px 0px 11px 24px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    width: 110px;
+}
+	ul#menu-pad-left-list li {
+    margin: 0px 0px 14px 0px;
+    display: table;
+}
+/*========= Main Menu =======*/
+/*---- Imago — Sonus — Ludus — Area -----*/
+nav#menu {
+    padding: 0px 12px 0px 0px;
+    width: 96px;
+    line-height: 1.5;
+    text-transform: lowercase;
+}
+div#menu-top-left{
+	position: absolute;
+    left: 0;
+    bottom: 16px;
+    padding: 0px 12px 0px 0px;
+    z-index: 1;
+}
+	div#menu-bottom-right{
+		position: absolute;
+		right: 0;
+		bottom: 130px;
+		padding:0px 0px 0px 12px;
+		z-index: 1;
+}
+	ul#menu-pad-right-list li {
+   	margin: 0px 0px 111px 0px;
+    display: table;
+} 
+	ul li a.menu-pad-left {
+	padding: 34px 30px 34px 24px;
+    letter-spacing: 0.75px;
+    width: 40px;
+    font-size: 16px;
+}
+	ul li a.menu-pad-right {
+	position: absolute;
+    padding: 38px 26px 38px 26px;
+    width: 40px;
+    font-size: 16px;
+}
+	li a.menu-pad-left:hover {
+    -webkit-transition: width 1s;
+    transition-timing-function: ease-out;
+    transition: width 0.75s;
+    width: 78px;
+    outline: 0;
+}
+	li a.menu-pad-right:hover, li a.menu-pad-right:active {
+    -webkit-transition: width 1s;
+    transition-timing-function: ease-out;
+    transition: width 0.75s;
+    width: 78px;
+    outline: 0;
+}
+	footer {
+  	position: absolute;
+    z-index: 12;
+    bottom: 24px;
+    right: 0px;
+    width: auto;
+    padding: 10px 24px 10px 18px;
+    margin: 0px 0px 10px 0px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+	  p.hide {
+        display:inline;
+    }
+}

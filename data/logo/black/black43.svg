@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.21 99.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>black</title>
+  <g id="sfondo">
+    <rect width="99.21" height="99.21"/>
+  </g>
+  <g id="sign">
+    <path class="cls-1" d="M32.68,27.54V67.13h6.91v4H28.38V27.54Z"/>
+    <path class="cls-1" d="M59.57,27.54H57.63V44.94a27.12,27.12,0,0,1-7.08,1.75V38.44h-3v8.45a8.09,8.09,0,0,1-5.19-1.38,5.34,5.34,0,0,1-1.67-4.36V27.55H36.15V41.79q0,9,11.35,9.05v7.3h3V50.65a35.42,35.42,0,0,0,7.08-1.95V63.25H62.2V31.55h4.28V71.14h4.3V27.54Z"/>
+  </g>
+</svg>
