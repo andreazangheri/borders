@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="Cache-Control" content="max-age=200" />
+	<meta name="description" content="Web App: Communications' Borders">
+	<title tabindex="1">What are borders?</title>
+	<meta name="application-name" content="borders">
+	<link rel="canonical" href="https://www.borders.altervista.org"  hreflang="en">
+	<link rel="manifest" href="../data/favicon/black/manifest.json">
+	<!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="borders">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<link rel="mask-icon" href="../data/favicon/black/safari-pinned-tab.svg" color="#000000">
+	<link rel="apple-touch-startup-image" href="../data/favicon/black/apple-icon-precomposed.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../data/favicon/black/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../data/favicon/black/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../data/favicon/black/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../data/favicon/black/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../data/favicon/black/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../data/favicon/black/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../data/favicon/black/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../data/favicon/black/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../data/favicon/black/apple-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../data/favicon/black/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="256x256"  href="../data/favicon/black/icon-256x256.png">
+	<link rel="icon" type="image/png" sizes="384x384"  href="../data/favicon/black/icon-384x384.png">
+	<link rel="icon" type="image/png" sizes="512x512"  href="../data/favicon/black/icon-512x512.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../data/favicon/black/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../data/favicon/black/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../data/favicon/black/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../data/favicon/black/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-TileImage" content="../data/favicon/black/ms-icon-144x144.png">
+	<meta name="theme-color" content="#000000">
+	<link rel="stylesheet" href="../css/stile.css" media="screen"/>
+	<script language="javascript" type="text/javascript" src="../sw.js"></script>
+	<script language="javascript" type="text/javascript" src="../libraries/p5.min.js"></script>
+	<script language="javascript" type="text/javascript" src="../libraries/p5.sound.min.js"></script>
+	<script language="javascript" type="text/javascript" src="../libraries/arpaToIPA.min.js"></script>
+	<script language="javascript" type="text/javascript" src="../libraries/jquery-3.3.1.slim.min.js"></script>
+	<script language="javascript" type="text/javascript" src="../libraries/p5.speech.min.js"></script>
+	<script language="javascript" type="text/javascript" src="../libraries/rita-small.min.js"></script> <!-- !work ->  rita-full.min.js  -->
+	<script language="javascript" type="text/javascript" src="borders.js"></script>
+	</head>
+	<style>
+		body, html {
+    height: 100%;
+}
+body{
+    width: 100%;
+	height: 100%;
+    text-transform: lowercase;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+	overflow: hidden;
+	-moz-box-sizing: border-box;
+ 	 box-sizing: border-box;
+	-webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+body#canvas {
+    display: block;
+		}
+		#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.loaded  #loader{
+        opacity: 0;
+        -webkit-transition: all 0.5s ease-out;  
+                transition: all 0.5s ease-out;
+    }
+#canvas {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    bottom: 33px;
+    z-index: 0;
+}</style>
+	<body id="canvas">
+				<script>
+		var d = new Date();
+    	var h = d.getHours();
+		var canvas = document.getElementById('canvas');
+			if(h >= 0 && h <= 8) {
+				canvas.style.backgroundColor = "#000";
+				canvas.style.color = "#fff";
+		} else if (h > 8 && h <= 12){
+				canvas.style.backgroundColor = "#fff";
+				canvas.style.color = "#000;"
+		} else if (h > 12 && h <= 18){
+				canvas.style.backgroundColor = "#fff";
+				canvas.style.color = "#000";
+		} else if (h > 18 && h <= 23){
+				canvas.style.backgroundColor = "#000";
+				canvas.style.color = "#fff";
+		}
+		</script>
+		<div id="header">
+			<div id="logo"></div>
+       		 <div class="logotype">borders</div>
+		</div>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+		</div>
+		<script>$(document).ready(function() {// setTimeout loading svg //
+	setTimeout(function(){
+		$('body').addClass('loaded');
+	}, 3000);
+});
+			$(document).ready(function() {
+	setTimeout(function(){
+		$('div#loader-wrapper').hide();
+	}, 4000);
+});	</script>
+		<div id="menu-top-left">
+       		<nav id="menu">
+        		<ul id= "menu-pad-left-list">
+					<li tabindex="">
+						<a href="#" onclick="imagoFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;">ĭmāgo</a>
+					</li>
+					<li tabindex="">
+						<a href="#" onclick="sonusFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;">sŏnus</a>
+					</li>
+					<li tabindex="">
+						<a href="#" onclick="ludusFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;">lūdus</a>
+					</li>
+					<li tabindex="">
+						<a href="#" onclick="areaFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;">ārĕa</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div id="pop"></div>
+		<div id="menu-bottom-right">
+			<ul id="menu-pad-right-list">
+				<li tabindex="">
+					<a href="#" onclick="stopFunction()" class="menu-pad-right no-link" style="touch-action: manipulation;">stop</a>  <!-- uno si aspetta che stop blocchi anche le animazioni oltre che il suono -->
+				</li>
+				<li tabindex="">
+					<a href="#" onclick="clearFunction()" class="menu-pad-right no-link" style="touch-action: manipulation;">clear</a>
+				</li>
+				<li tabindex="">
+					<a href="#" onclick="saveFunction()" target="_blank" class="menu-pad-right no-link" style="touch-action: manipulation;">save</a>
+				</li>
+			</ul>
+		</div>
+		<footer>
+			<p id="footer"></p>
+			<p class="hide">
+				<a href="http://www.accademiadiurbino.it/aabb/" target="_blank" rel="noopener" class="aabb no-link">| academy of fine arts of urbino</a>
+        <!-- &mdash; department of applied arts -->
+        &mdash; new art technologies
+        &mdash; multimedia design &mdash; 2017 <!-- &amp;&amp; multimedia languages -->
+			</p>
+		</footer>
+		<script language="javascript" type="text/javascript" src="main.js"></script>
+		<script>
+/*window.onorientationchange = function() { window.location.reload(); };// If device change orientation then reload the page //
+document.addEventListener('touchmove', function (event) {// disable viewport scaling pinch&zoom //
+  if (event.scale !== 1) { event.preventDefault(); }
+}, false);
+var lastTouchEnd = 0;
+document.addEventListener('touchend', function (event) {
+  var now = (new Date()).getTime();
+  if (now - lastTouchEnd <= 300) {
+    event.preventDefault();
+  }
+  lastTouchEnd = now;
+}, false);
+document.documentElement.addEventListener('touchmove', function (event) {
+    event.preventDefault();      
+}, false);
+document.addEventListener('touchmove', function(event) {
+    event = event.originalEvent || event;
+    if(event.scale > 1) {
+        event.preventDefault();
+    }
+}, false);*/
+$(document).ready(function () {// a link without url at the bottom of the page //
+          setTimeout(function () {
+               
+                $('a[href].no-link').each(function () {
+                    var href = this.href;
+    
+                    $(this).removeAttr('href').css('cursor', 'pointer').click(function () {
+                        if (href.toLowerCase().indexOf("#") >= 0) {
+    
+                        } else {
+                            window.open(href, '_blank');
+                        }
+                    });
+                });
+    
+          }, 500);
+    });
+		</script>
+		<script>
+			if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js', { scope: '/' })
+          .then(function(registration) {
+                console.log('Service Worker Registered');
+          });
+        navigator.serviceWorker.ready.then(function(registration) {
+           console.log('Service Worker Ready');
+        });}
+		</script>
+		<noscript>Sorry, your browser does not support JavaScript!</noscript>
+	</body>
+</html>
