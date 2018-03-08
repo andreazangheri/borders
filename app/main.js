@@ -44,6 +44,10 @@ Tags: javascript
 				github.style.border = "0";
 				github.style.right = "0";
 			}());
+			(function(){
+				var trace = document.getElementById("trace");
+				trace.style.fill = "#000";
+			}());
 (function(){
 				var frase = document.createElement("a");
 				frase.style.color = "black";
@@ -287,12 +291,16 @@ Tags: javascript
 }());
 			(function(){
 				var github = document.getElementById("github-octo");
-				github.style.fill = "#000";
-				github.style.color = "#fff";
+				github.style.fill = "#fff";
+				github.style.color = "#000";
 				github.style.position = "absolute";
 				github.style.top = "0";
 				github.style.border = "0";
 				github.style.right = "0";
+			}());
+			(function(){
+				var trace = document.getElementById("trace");
+				trace.style.fill = "#000";
 			}());
 			(function(){
 				var frase = document.createElement("a");
@@ -458,7 +466,6 @@ Tags: javascript
     document.getElementsByTagName('head')[0].appendChild(link);
 }());
 			(function(){
-			
 			var black_b= document.querySelectorAll("li");
 			for (var i = 0; i < black_b.length; i++) {
 							black_b[i].style.backgroundColor = "#fff";
@@ -546,6 +553,10 @@ Tags: javascript
 				github.style.top = "0";
 				github.style.border = "0";
 				github.style.right = "0";
+			}());
+			(function(){
+				var trace = document.getElementById("trace");
+				trace.style.fill = "#fff";
 			}());
 			(function(){
 				var frase = document.createElement("a");
@@ -800,12 +811,16 @@ Tags: javascript
 }());
 			(function(){
 				var github = document.getElementById("github-octo");
-				github.style.fill = "#fff";
-				github.style.color = "#000";
+				github.style.fill = "#000";
+				github.style.color = "#fff";
 				github.style.position = "absolute";
 				github.style.top = "0";
 				github.style.border = "0";
 				github.style.right = "0";
+			}());
+			(function(){
+				var trace = document.getElementById("trace");
+				trace.style.fill = "#fff";
 			}());
 			(function(){
 				var frase = document.createElement("a");
