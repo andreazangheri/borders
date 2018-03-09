@@ -45,7 +45,7 @@
 	<script language="javascript" type="text/javascript" src="libraries/jquery-3.3.1.slim.min.js"></script>
 	<script language="javascript" type="text/javascript" src="libraries/p5.speech.min.js"></script>
 	<script language="javascript" type="text/javascript" src="libraries/rita-small.min.js"></script> <!-- !work ->  rita-full.min.js  -->
-	<script language="javascript" type="text/javascript" src="borders.js"></script>
+	<script language="javascript" type="text/javascript" src="app/borders.js"></script>
 	</head>
 	<style>
 		body, html {
@@ -129,21 +129,26 @@ body#canvas {
        		<nav id="menu">
         		<ul id= "menu-pad-left-list">
 					<li tabindex="">
-						<a href="#" onclick="imagoFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;">ĭmāgo</a>
+						<a href="#" onclick="imagoFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;" aria-label="ĭmāgo Function">ĭmāgo</a>
 					</li>
 					<li tabindex="">
-						<a href="#" onclick="sonusFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;">sŏnus</a>
+						<a href="#" onclick="sonusFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;" aria-label="sŏnus Function">sŏnus</a>
 					</li>
 					<li tabindex="">
-						<a href="#" onclick="ludusFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;">lūdus</a>
+						<a href="#" onclick="ludusFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;" aria-label="lūdus Function">lūdus</a>
 					</li>
 					<li tabindex="">
-						<a href="#" onclick="areaFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;">ārĕa</a>
+						<a href="#" onclick="areaFunction()" class="menu-pad-left no-link" style="touch-action: manipulation;" aria-label="ārĕa Function">ārĕa</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
-		<div id="pop"></div>
+		<a href="https://github.com/typerror/Borders" class="github-corner" target="_blank" rel="noopener" aria-label="View source on Github"><svg id="github-octo" width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+			<path d="M5,0H250V245Z"/>
+  <path id="trace"d="M250,250V237.3L145.1,132.4l-3.2-6.3L130,113.6l-6-2.3L12.7,0H0L250,250"/>
+  <path d="M134.59,102.71c-14.5-9.3-9.3-19.4-9.3-19.4,3-6.9,1.5-11,1.5-11-1.3-6.6,2.9-2.3,2.9-2.3,3.9,4.6,2.1,11,2.1,11-2.6,10.3,5.1,14.6,8.9,15.9" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+  <path d="M121.29,108.71c-.1.1,3.7,1.5,4.8.4L140,95.31c3.2-2.4,6.2-3.2,8.5-3-8.4-10.6-14.7-24.2,1.6-40.6a23.51,23.51,0,0,1,15.9-7c.6-1.6,3.5-7.4,11.7-10.9,0,0,4.7,2.4,7.4,16.1a58.66,58.66,0,0,1,12.1,9.2,54.32,54.32,0,0,1,9.2,12.2c13.7,2.6,16.2,7.3,16.2,7.3-3.6,8.2-9.4,11.1-10.9,11.7a23.44,23.44,0,0,1-7.1,15.9c-16.4,16.4-30,10-40.6,1.6.2,2.8-1,6.8-5,10.8l-11.7,11.6c-1.2,1.2.6,5.4.8,5.3Z" fill="currentColor" class="octo-body"></path>
+</svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 		<div id="menu-bottom-right">
 			<ul id="menu-pad-right-list">
 				<li tabindex="">
@@ -160,13 +165,13 @@ body#canvas {
 		<footer>
 			<p id="footer"></p>
 			<p class="hide">
-				<a href="http://www.accademiadiurbino.it/aabb/" target="_blank" rel="noopener" class="aabb no-link">| academy of fine arts of urbino</a>
+				<a href="http://www.accademiadiurbino.it/aabb/" target="_blank" rel="noopener" class="aabb">| academy of fine arts of urbino</a>
         <!-- &mdash; department of applied arts -->
         &mdash; new art technologies
         &mdash; multimedia design &mdash; 2017 <!-- &amp;&amp; multimedia languages -->
 			</p>
 		</footer>
-		<script language="javascript" type="text/javascript" src="main.js"></script>
+		<script language="javascript" type="text/javascript" src="app/main.js"></script>
 		<script>
 /*window.onorientationchange = function() { window.location.reload(); };// If device change orientation then reload the page //
 document.addEventListener('touchmove', function (event) {// disable viewport scaling pinch&zoom //
@@ -209,7 +214,7 @@ $(document).ready(function () {// a link without url at the bottom of the page /
 		</script>
 		<script>
 			if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+        navigator.serviceWorker.register('sw.js', { scope: '/' })
           .then(function(registration) {
                 console.log('Service Worker Registered');
           });

@@ -37,7 +37,7 @@ var h; // hour
 function setup() {// ===== Setup ===== //
 myCanvas = createCanvas(windowWidth,windowHeight);
 myCanvas.parent('canvas');
-fontRegular = loadFont("data/font/NotoSansUI-Regular.ttf");
+fontRegular = loadFont("../data/font/NotoSansUI-Regular.ttf");
 myRec.start();
  frameRate(5);
  textSize(16);

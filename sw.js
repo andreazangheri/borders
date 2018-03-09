@@ -28,17 +28,17 @@ self.addEventListener('install', e => {
 
 '/sw.js?timestamp=${timeStamp}',
 		  
-'/index.html?timestamp=${timeStamp}',
+'app/index.html?timestamp=${timeStamp}',
 
-'/index.html?homescreen=1?timestamp=${timeStamp}',
+'app/index.html?homescreen=1?timestamp=${timeStamp}',
 
-'/?homescreen=1?timestamp=${timeStamp}',
+'app/?homescreen=1?timestamp=${timeStamp}',
 
 '/css/stile.css?timestamp=${timeStamp}',
 
-'/borders.js?timestamp=${timeStamp}',
+'app/borders.js?timestamp=${timeStamp}',
 	
-'/sketch.properties?timestamp=${timeStamp}',
+'app/sketch.properties?timestamp=${timeStamp}',
 	
 'libraries/arpaToIPA.min.js?timestamp=${timeStamp}',
 	
@@ -60,23 +60,7 @@ self.addEventListener('install', e => {
 		  
 'data/load_white_b.svg?timestamp=${timeStamp}',
 	
-'data/font/NotoSansUI-Regular.eot?timestamp=${timeStamp}',
-	
-'data/font/NotoSansUI-Regular.svg?timestamp=${timeStamp}',
-	
-'data/font/NotoSansUI-Regular.woff?timestamp=${timeStamp}',
-	
-'data/font/NotoSansUI-Regular.woff2?timestamp=${timeStamp}',
-	
 'data/font/NotoSansUI-Regular.ttf?timestamp=${timeStamp}',
-	
-'data/font/NotoSansUI-Bold.eot?timestamp=${timeStamp}',
-	
-'data/font/NotoSansUI-Bold.svg?timestamp=${timeStamp}',
-	
-'data/font/NotoSansUI-Bold.woff?timestamp=${timeStamp}',
-	
-'data/font/NotoSansUI-Bold.woff2?timestamp=${timeStamp}',
 	
 'data/font/NotoSansUI-Bold.ttf?timestamp=${timeStamp}',
 		  
