@@ -28,15 +28,17 @@ self.addEventListener('install', e => {
 
 '/sw.js?timestamp=${timeStamp}',
 		  
-'app/index.html?timestamp=${timeStamp}',
+'/index.html?timestamp=${timeStamp}',
 
-'app/index.html?homescreen=1?timestamp=${timeStamp}',
+'/index.html?homescreen=1?timestamp=${timeStamp}',
 
-'app/?homescreen=1?timestamp=${timeStamp}',
+'/?homescreen=1?timestamp=${timeStamp}',
 
 '/css/stile.css?timestamp=${timeStamp}',
 
 'app/borders.js?timestamp=${timeStamp}',
+
+'app/main.js?timestamp=${timeStamp}',
 	
 'app/sketch.properties?timestamp=${timeStamp}',
 	
