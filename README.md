@@ -12,6 +12,7 @@
   Overall Borders comprehend a product and editorial project and a progressive web application. This project is the web design & web development part of the global Borders project, which is completed by the editorial product.
 <ul>
 <li><p><a href="https://www.behance.net/gallery/64701607/Borders" target="_blank">Borders editorial project on Bēhance</a></p></li>
+<li><p><a href="https://www.behance.net/gallery/64776803/Borders-Web-App" target="_blank">Borders web app on Bēhance</a></p></li>
 </ul>
 <p>Borders web app can listen and speak and it has been designed and developed following a mobile-first approach. It's responsive and compatible with the majority of devices and browsers.</p>
 <p>The application is based on HTML, CSS and JS. It has been developed using pure JavaScript, p5.js core library and other p5 libraries, in particular: p5.speech to access web speech and speech recognition APIs; p5.sound to extend audio input, analysis and synthesis; rita.js, which is a library for computational literature; arpaToIPA.js has been utilized to convert arpa alphabet to IPA alphabet. Graphic and sound outputs are displayed on the screen and emitted through speakers.
