@@ -8,7 +8,7 @@
 <p><strong>BORDERS</strong></p><br>
 </header>
 <p><a href="https://borders.altervista.org" target="_blank">https://www.borders.altervista.org</a></p>
-<p>Starting from semiotic, linguistic, sensorium and mass media topics, Borders is an experimental graphic-phonetic web app on frontiers. Going beyond ritual and cultural dimensions, the project is placed, as far as possible, above any culture, thus summarizing them all. By subtracting meanings and subjects from their daily representation what remains is the cluster of sounds, images, plays and spaces generated in a self-powered and involuntary nexus.</p>
+<p>Starting from semiotic, linguistic, sensorium and mass media topics, Borders is a multimedia project on communicative frontiers. Going beyond ritual and cultural dimensions, the project is placed, as far as possible, above any culture, thus summarizing them all. By subtracting meanings and subjects from their daily representation what remains is the cluster of sounds, images, plays and spaces generated in a self-powered and involuntary nexus.</p>
   Overall Borders comprehend a product and editorial project and a progressive web application. This project is the web design & web development part of the global Borders project, which is completed by the editorial product.
 <ul>
 <li><p><a href="https://www.behance.net/gallery/64701607/Borders" target="_blank">Borders editorial project on Bēhance</a></p></li>
