@@ -1,13 +1,13 @@
 <!--[![www.andreazangheri.it](https://img.shields.io/badge/www.-andreazangheri.it-blue.svg)](https://www.andreazangheri.it)-->
 ![github license](https://img.shields.io/github/license/typerror/borders.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/typerror/borders.svg)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![github release](https://img.shields.io/github/release/typerror/borders.svg)](https://github.com/typerror/borders/releases)
 <!--[![CircleCI Status](https://circleci.com/gh/typerror/typerror.github.io.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/typerror/typerror.github.io)-->
 <!--[![Build Status](https://travis-ci.com/typerror/typerror.github.io.svg?branch=master)](https://travis-ci.com/typerror/typerror.github.io)-->
 <!--[![Codeship Status for typerror/typerror.github.io](https://app.codeship.com/projects/269d6c90-a7f3-0136-1b34-22a19e54f1ad/status?branch=master)](https://app.codeship.com/projects/308379)-->
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 <!-- ![npm dependencies](https://img.shields.io/david/typerror/borders.svg)-->
 <!-- ![npm devdependencies](https://img.shields.io/david/dev/typerror/borders.svg)-->
-[![github release](https://img.shields.io/github/release/typerror/borders.svg)](https://github.com/typerror/borders/releases)
 <!DOCTYPE html>
 <html>
 <head>
